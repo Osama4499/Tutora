@@ -6,6 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import com.example.tutora.models.sampledata.Course;
+import com.example.tutora.models.sampledata.CourseEnrolled;
+import com.example.tutora.models.sampledata.Lesson;
+import com.example.tutora.models.sampledata.Student;
 
 public class landing extends AppCompatActivity {
     Button btnLogin,btnsignup;
@@ -13,6 +19,7 @@ public class landing extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
+
         btnLogin =findViewById(R.id.log);
         btnsignup =findViewById(R.id.c);
         btnLogin.setOnClickListener(new View.OnClickListener() {
